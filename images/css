@@ -1,0 +1,37 @@
+/* Exemplo: Adicionar imagem de fundo no hero */
+.hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Exemplo: Adicionar logo */
+.logo-pet {
+    background-image: url('../images/logo-pet.jpg');
+    background-size: cover;
+}
+/* Exemplo: Adicionar luna e calma e docil  */
+.pets.srd2anos {
+    background-image: url('../images/pets-srd-2anos.jpg');
+    background-size: cover;
+}
+/* Exemplo: Adicionar simba e um filhote brincalhao e curioso */
+.pets.srd-macho {
+    background-image: url('../images/pets-srd-macho.jpg');
+    background-size: cover;
+}
+/* Exemplo: Adicionar mel e um golden paciente e amigavel */
+.pets.golden {
+    background-image: url('../images/pets-golden.jpg');
+    background-size: cover;
+}
+/* Exemplo: Adicionar bolinha um poodle super educado e carinhoso*/
+.pets.poodle {
+    background-image: url('../images/pets-poodle.jpg');
+    background-size: cover;
+}
+/* Exemplo: Adicionar mimi a gata persa tranquila e independente */
+.pets.gata-persa-femea {
+    background-image: url('../images/pets-gata-persa-femea.jpg');
+    background-size: cover;
+}

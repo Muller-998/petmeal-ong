@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre-se na PetMeal para adotar um pet, ser voluntário ou apadrinhar um animal. Junte-se à nossa causa!">
+    <meta name="keywords" content="cadastro adoção, cadastro voluntário, formulário pet, registro ONG">
+    <title>Cadastro - PetMeal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🐾 PetMeal</h1>
+                </div>
+                <button class="menu-toggle" aria-label="Abrir menu de navegação">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html" class="active">Cadastre-se</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Cadastro</h1>
+                <p>Preencha o formulário e faça parte da família PetMeal</p>
+            </div>
+        </section>
+
+        <section class="registration-section">
+            <div class="container">
+                <div class="registration-intro">
+                    <h2>Junte-se a Nós</h2>
+                    <p>Seja para adotar um pet, tornar-se voluntário ou apadrinhar um animal, estamos felizes em tê-lo(a) conosco. Preencha o formulário abaixo com atenção e nossa equipe entrará em contato em até 48 horas.</p>
+                </div>
+
+                <form id="registration-form" class="registration-form" novalidate>
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo: <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="nome" 
+                                    name="nome" 
+                                    required
+                                    minlength="3"
+                                    maxlength="100"
+                                    placeholder="Digite seu nome completo"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail: <span class="required">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    placeholder="seuemail@exemplo.com"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email-confirm">Confirmar E-mail: <span class="required">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email-confirm" 
+                                    name="email-confirm" 
+                                    required
+                                    placeholder="Confirme seu e-mail"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cpf">CPF: <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="cpf" 
+                                    name="cpf" 
+                                    required
+                                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                                    placeholder="000.000.000-00"
+                                    maxlength="14"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone">Telefone: <span class="required">*</span></label>
+                                <input 
+                                    type="tel" 
+                                    id="telefone" 
+                                    name="telefone" 
+                                    required
+                                    pattern="\(\d{2}\) \d{4,5}-\d{4}"
+                                    placeholder="(00) 00000-0000"
+                                    maxlength="15"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="data-nascimento">Data de Nascimento: <span class="required">*</span></label>
+                                <input 
+                                    type="date" 
+                                    id="data-nascimento" 
+                                    name="data-nascimento" 
+                                    required
+                                    min="1920-01-01"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="genero">Gênero:</label>
+                                <select id="genero" name="genero">
+                                    <option value="">Selecione...</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="outro">Outro</option>
+                                    <option value="nao-informar">Prefiro não informar</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cep">CEP: <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="cep" 
+                                    name="cep" 
+                                    required
+                                    pattern="\d{5}-\d{3}"
+                                    placeholder="00000-000"
+                                    maxlength="9"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                                <small>Informe o CEP para preenchimento automático</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="logradouro">Logradouro: <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="logradouro" 
+                                    name="logradouro" 
+                                    required
+                                    placeholder="Rua, Avenida, etc."
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group small">
+                                <label for="numero">Número: <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="numero" 
+                                    name="numero" 
+                                    required
+                                    placeholder="Nº"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="complemento">Complemento:</label>
+                                <input 
+                                    type="text" 
+                                    id="complemento" 
+                                    name="complemento" 
+                                    placeholder="Apto, Bloco, etc.">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bairro">Bairro: <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="bairro" 
+                                    name="bairro" 
+                                    required
+                                    placeholder="Bairro"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cidade">Cidade: <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="cidade" 
+                                    name="cidade" 
+                                    required
+                                    placeholder="Cidade"
+                                    aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="estado">Estado: <span class="required">*</span></label>
+                                <select id="estado" name="estado" required aria-required="true">
+                                    <option value="">Selecione...</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Interesse <span class="required">*</span></legend>
+                        
+                        <div class="form-group">
+                            <label>Como deseja contribuir? <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input 
+                                        type="radio" 
+                                        id="interesse-adocao" 
+                                        name="interesse" 
+                                        value="adocao" 
+                                        required
+                                        aria-required="true">
+                                    <label for="interesse-adocao">Quero Adotar um Pet</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input 
+                                        type="radio" 
+                                        id="interesse-voluntario" 
+                                        name="interesse" 
+                                        value="voluntario"
+                                        required>
+                                    <label for="interesse-voluntario">Quero Ser Voluntário</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input 
+                                        type="radio" 
+                                        id="interesse-apadrinhamento" 
+                                        name="interesse" 
+                                        value="apadrinhamento"
+                                        required>
+                                    <label for="interesse-apadrinhamento">Quero Apadrinhar um Pet</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input 
+                                        type="radio" 
+                                        id="interesse-doacao" 
+                                        name="interesse" 
+                                        value="doacao"
+                                        required>
+                                    <label for="interesse-doacao">Quero Fazer Doações</label>
+                                </div>
+                            </div>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group" id="adocao-details" style="display: none;">
+                            <label for="tipo-pet">Tipo de Pet Desejado:</label>
+                            <select id="tipo-pet" name="tipo-pet">
+                                <option value="">Selecione...</option>
+                                <option value="cachorro">Cachorro</option>
+                                <option value="gato">Gato</option>
+                                <option value="ambos">Tanto faz</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="voluntario-details" style="display: none;">
+                            <label for="area-voluntario">Área de Interesse:</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="vol-cuidados" name="area-voluntario" value="cuidados">
+                                    <label for="vol-cuidados">Cuidados Diretos com Animais</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="vol-eventos" name="area-voluntario" value="eventos">
+                                    <label for="vol-eventos">Organização de Eventos</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="vol-comunicacao" name="area-voluntario" value="comunicacao">
+                                    <label for="vol-comunicacao">Comunicação e Marketing</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="vol-admin" name="area-voluntario" value="administrativo">
+                                    <label for="vol-admin">Apoio Administrativo</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="vol-lar" name="area-voluntario" value="lar-temporario">
+                                    <label for="vol-lar">Lar Temporário</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="disponibilidade">Disponibilidade:</label>
+                            <select id="disponibilidade" name="disponibilidade">
+                                <option value="">Selecione...</option>
+                                <option value="manha">Manhã</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noite">Noite</option>
+                                <option value="fins-semana">Finais de Semana</option>
+                                <option value="flexivel">Flexível</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Informações Adicionais</legend>
+                        
+                        <div class="form-group">
+                            <label for="experiencia">Você já teve pets antes?</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="exp-sim" name="experiencia" value="sim">
+                                    <label for="exp-sim">Sim</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="exp-nao" name="experiencia" value="nao">
+                                    <label for="exp-nao">Não</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem / Observações:</label>
+                            <textarea 
+                                id="mensagem" 
+                                name="mensagem" 
+                                rows="5"
+                                maxlength="500"
+                                placeholder="Conte-nos um pouco mais sobre você e suas expectativas..."></textarea>
+                            <small>Máximo 500 caracteres</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="como-conheceu">Como conheceu a PetMeal?</label>
+                            <select id="como-conheceu" name="como-conheceu">
+                                <option value="">Selecione...</option>
+                                <option value="redes-sociais">Redes Sociais</option>
+                                <option value="google">Google</option>
+                                <option value="amigos">Indicação de Amigos</option>
+                                <option value="evento">Evento</option>
+                                <option value="midia">Mídia (TV, Jornal, Rádio)</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Termos e Condições</legend>
+                        
+                        <div class="form-group checkbox-group">
+                            <div class="checkbox-item">
+                                <input 
+                                    type="checkbox" 
+                                    id="termos" 
+                                    name="termos" 
+                                    required
+                                    aria-required="true">
+                                <label for="termos">
+                                    Li e aceito os <a href="#" target="_blank">Termos de Uso</a> e a <a href="#" target="_blank">Política de Privacidade</a> <span class="required">*</span>
+                                </label>
+                            </div>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">
+                                    Desejo receber novidades e informações da PetMeal por e-mail
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="whatsapp-contato" name="whatsapp-contato">
+                                <label for="whatsapp-contato">
+                                    Autorizo contato via WhatsApp
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Enviar Cadastro</button>
+                        <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
+                    </div>
+
+                    <p class="form-note"><span class="required">*</span> Campos obrigatórios</p>
+                </form>
+
+                <div class="success-message" id="success-message" style="display: none;">
+                    <h3>✅ Cadastro Realizado com Sucesso!</h3>
+                    <p>Obrigado por se cadastrar na PetMeal. Nossa equipe entrará em contato em até 48 horas úteis.</p>
+                    <p>Você receberá um e-mail de confirmação em breve.</p>
+                    <a href="index.html" class="btn btn-primary">Voltar ao Início</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container">
+                <h2>Próximos Passos</h2>
+                <div class="steps-grid">
+                    <article class="step">
+                        <div class="step-number">1</div>
+                        <h3>Confirmação</h3>
+                        <p>Você receberá um e-mail confirmando o recebimento do seu cadastro.</p>
+                    </article>
+                    <article class="step">
+                        <div class="step-number">2</div>
+                        <h3>Análise</h3>
+                        <p>Nossa equipe analisará suas informações em até 48 horas.</p>
+                    </article>
+                    <article class="step">
+                        <div class="step-number">3</div>
+                        <h3>Contato</h3>
+                        <p>Entraremos em contato para agendar uma entrevista ou visita.</p>
+                    </article>
+                    <article class="step">
+                        <div class="step-number">4</div>
+                        <h3>Ação</h3>
+                        <p>Você poderá conhecer os pets, iniciar voluntariado ou formalizar doações.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PetMeal</h4>
+                    <p>Conectando pets com lares amorosos desde 2018.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Documentos</h4>
+                    <ul>
+                        <li><a href="#">Estatuto Social</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetMeal - Todos os direitos reservados. CNPJ: 12.345.678/0001-90</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
