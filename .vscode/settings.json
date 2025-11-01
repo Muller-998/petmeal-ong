@@ -1,4 +1,11 @@
 {
+  // Disable downloading external JSON schemas to avoid HTTP 429 errors when fetching schemas
+  "json.schemaDownload.enable": false,
   "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true
+  "files.trimFinalNewlines": true,
+  "liveServer.settings.port": 5501,
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.commandsToSkipShell": [
+    ""
+  ]
 }

@@ -19,19 +19,26 @@
 .pets.srd-macho {
     background-image: url('../images/pets-srd-macho.jpg');
     background-size: cover;
+    will-change: auto;
+
 }
 /* Exemplo: Adicionar mel e um golden paciente e amigavel */
 .pets.golden {
     background-image: url('../images/pets-golden.jpg');
     background-size: cover;
+    will-change: auto;
+
 }
 /* Exemplo: Adicionar bolinha um poodle super educado e carinhoso*/
 .pets.poodle {
     background-image: url('../images/pets-poodle.jpg');
     background-size: cover;
+    will-change: auto;
+
 }
 /* Exemplo: Adicionar mimi a gata persa tranquila e independente */
 .pets.gata-persa-femea {
     background-image: url('../images/pets-gata-persa-femea.jpg');
     background-size: cover;
+    will-change: auto;
 }
