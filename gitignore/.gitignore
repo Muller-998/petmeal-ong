@@ -1,0 +1,51 @@
+# Arquivos do Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Arquivos do Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Arquivos de Log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependências (caso use npm no futuro)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Arquivos de Build (caso compile no futuro)
+dist/
+build/
+.cache/
+
+# Arquivos Temporários
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Backup
+*.bak
+*.backup
+
+# Arquivos Grandes (evitar upload acidental)
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xd
