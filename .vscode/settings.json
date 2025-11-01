@@ -1,11 +1,48 @@
 {
-  // Disable downloading external JSON schemas to avoid HTTP 429 errors when fetching schemas
-  "json.schemaDownload.enable": false,
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "liveServer.settings.port": 5501,
+  // === GERAL ===
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1500,
+  "explorer.confirmDelete": false,
+  "editor.linkedEditing": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": null, // Prettier como formatador
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.empty.hint": "hidden",
+  // === C/C++ ===
+  "C_Cpp.default.compilerPath": "C:/MinGW/bin/gcc.exe",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  // === GIT E GITHUB ===
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync", // Envia commits automaticamente
+  "git.suggestSmartCommit": true,
+  "github.copilot.enable": {
+    "*": true
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "gitlens.currentLine.enabled": true,
+  "gitlens.hovers.enabled": true,
+  "gitlens.views.repositories.files.layout": "tree",
+  // === LIVE SERVER ===
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.wait": 500,
+  // === SYNC E EXTENSÕES ===
+  "settingsSync.ignoredSettings": [],
+  "settingsSync.keybindingsPerPlatform": false,
+  "text2code.showLogoutWelcomeView": false,
+  "text2code.showLoginWelcomeView": true,
+  "database-client.autoSync": true,
+  // === TERMINAL ===
   "terminal.integrated.sendKeybindingsToShell": true,
-  "terminal.integrated.commandsToSkipShell": [
-    ""
-  ]
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontSize": 14
 }
