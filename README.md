@@ -31,18 +31,6 @@ petmeal/
 └── .gitignore
 ```
 
-## 🚀 Como Configurar no VS Code
-
-### Passo 1: Criar a Estrutura de Pastas
-
-1. Abra o VS Code
-2. Crie uma nova pasta chamada `petmeal`
-3. Abra esta pasta no VS Code (File > Open Folder)
-4. Crie a estrutura de pastas conforme mostrado acima:
-   - Pasta `css`
-   - Pasta `js`
-   - Pasta `images`
-
 ### Passo 2: Criar os Arquivos
 
 1. **Arquivo index.html** (na raiz do projeto)
@@ -61,21 +49,6 @@ petmeal/
 5. **Arquivo scripts.js** (dentro da pasta `js`)
    - Crie o arquivo `js/scripts.js`
    - Copie o conteúdo JavaScript fornecido
-
-### Passo 3: Executar o Projeto
-
-#### Opção 1: Usando a Extensão Live Server (Recomendado)
-
-1. Instale a extensão "Live Server" no VS Code
-2. Clique com o botão direito no arquivo `index.html`
-3. Selecione "Open with Live Server"
-4. O navegador abrirá automaticamente
-
-#### Opção 2: Abrir Diretamente no Navegador
-
-1. Navegue até a pasta do projeto no explorador de arquivos
-2. Clique duas vezes no arquivo `index.html`
-3. O arquivo será aberto no navegador padrão
 
 ## ✨ Funcionalidades Implementadas
 
@@ -182,26 +155,6 @@ petmeal/
 - URLs amigáveis
 - Descriptions únicas por página
 
-## 📋 Requisitos Atendidos
-
-### Conforme Especificações do Projeto
-
-✅ Mínimo 3 páginas HTML com estrutura semântica completa  
-✅ Hierarquia de títulos lógica e consistente  
-✅ Uso de imagens (preparado para adicionar)  
-✅ Formulário complexo na página cadastro.html  
-✅ Tipos de entrada HTML5 variados  
-✅ Validação nativa com atributos HTML5  
-✅ Agrupamento lógico com fieldsets  
-✅ Máscaras para CPF, Telefone e CEP  
-✅ Design responsivo mobile-first  
-✅ Compatibilidade tablets e desktops  
-✅ Pontos de quebra bem definidos  
-✅ Conformidade WCAG 2.1 Nível AA  
-✅ Navegação por teclado  
-✅ Suporte a leitores de tela  
-✅ Contraste adequado de cores
-
 ## 🎯 Como Adicionar Imagens (Opcional)
 
 Para adicionar imagens reais ao projeto:
@@ -258,59 +211,6 @@ Para adicionar imagens reais ao projeto:
 2. Escolha "By file upload"
 3. Faça upload do arquivo `css/styles.css`
 4. Verifique os resultados
-
-## 📦 Preparação para GitHub
-
-### Passo 1: Criar Repositório
-
-1. Acesse GitHub.com e faça login
-2. Clique em "New Repository"
-3. Nome: `petmeal-ong`
-4. Marque "Public"
-5. NÃO adicione README (já temos um)
-6. Clique em "Create repository"
-
-### Passo 2: Inicializar Git no Projeto
-
-Abra o terminal no VS Code (Terminal > New Terminal) e execute:
-
-```bash
-# Inicializar repositório
-git init
-
-# Adicionar todos os arquivos
-git add .
-
-# Fazer o primeiro commit
-git commit -m "Projeto PetMeal - Plataforma completa de adoção de pets"
-
-# Conectar ao GitHub (substitua USERNAME pelo seu usuário)
-git branch -M main
-git remote add origin https://github.com/USERNAME/petmeal-ong.git
-
-# Enviar para GitHub
-git push -u origin main
-```
-
-### Passo 3: Tornar o Repositório Público
-
-1. Acesse seu repositório no GitHub
-2. Vá em Settings
-3. Role até "Danger Zone"
-4. Clique em "Change visibility"
-5. Escolha "Public"
-6. Confirme a ação
-
-### Passo 4: Ativar GitHub Pages (Opcional)
-
-Para hospedar o site gratuitamente:
-
-1. No seu repositório, vá em Settings > Pages
-2. Source: "Deploy from a branch"
-3. Branch: main, pasta: / (root)
-4. Clique em Save
-5. Aguarde alguns minutos
-6. Seu site estará disponível em: `https://USERNAME.github.io/petmeal-ong/`
 
 ## 🎨 Personalização
 
