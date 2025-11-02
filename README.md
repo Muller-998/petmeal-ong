@@ -4,51 +4,15 @@
 
 PetMeal é uma plataforma web completa desenvolvida para ONGs que trabalham com adoção de animais de estimação. O projeto oferece funcionalidades para gerenciamento de projetos sociais, captação de voluntários, sistema de doações e transparência organizacional.
 
-## 📁 Estrutura de Pastas
+### Demonstração (Deploy)
 
-Organize seu projeto no VS Code seguindo esta estrutura:
+- Você pode visualizar o site em funcionamento através do GitHub Pages no link abaixo:
 
-```text
-petmeal/
-│
-├── index.html
-├── projetos.html
-├── cadastro.html
-│
-├── css/
-│   └── styles.css
-│
-├── js/
-│   └── scripts.js
-│
-├── images/
-│   ├── logo.png (opcional)
-│   ├── hero-bg.jpg (opcional)
-│   ├── pets/ (opcional - fotos dos pets)
-│   └── team/ (opcional - fotos da equipe)
-│
-├── README.md
-└── .gitignore
-```
-
-### Passo 2: Criar os Arquivos
-
-1. **Arquivo index.html** (na raiz do projeto)
-   - Crie o arquivo e copie o conteúdo fornecido
-
-2. **Arquivo projetos.html** (na raiz do projeto)
-   - Crie o arquivo e copie o conteúdo fornecido
-
-3. **Arquivo cadastro.html** (na raiz do projeto)
-   - Crie o arquivo e copie o conteúdo fornecido
-
-4. **Arquivo styles.css** (dentro da pasta `css`)
-   - Crie o arquivo `css/styles.css`
-   - Copie o conteúdo CSS fornecido
-
-5. **Arquivo scripts.js** (dentro da pasta `js`)
-   - Crie o arquivo `js/scripts.js`
-   - Copie o conteúdo JavaScript fornecido
+<<<<<<< HEAD
+   <https://muller-998.github.io/petmeal-ong/>
+=======
+   https://muller-998.github.io/petmeal-ong/
+>>>>>>> a3a9a929793e8105af90a909754300d9c0285ff7
 
 ## ✨ Funcionalidades Implementadas
 
@@ -155,101 +119,32 @@ petmeal/
 - URLs amigáveis
 - Descriptions únicas por página
 
-## 🎯 Como Adicionar Imagens (Opcional)
+## 📋 Requisitos Atendidos
 
-Para adicionar imagens reais ao projeto:
+### Conforme Especificações do Projeto
 
-1. Coloque as imagens na pasta `images/`
-2. Atualize os elementos com classes de imagem no CSS:
-
-```css
-/* Exemplo: Adicionar imagem de fundo no hero */
-.hero {
-    background-image: url('../images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Exemplo: Adicionar foto de membro da equipe */
-.member-photo {
-    background-image: url('../images/team/ana-silva.jpg');
-    background-size: cover;
-}
-```
-
-### Formatos de Imagem Recomendados
-
-- **JPG**: Fotos e imagens com muitas cores
-- **PNG**: Imagens com transparência, logos
-- **WebP**: Formato moderno, melhor compressão (opcional)
-- **SVG**: Ícones e ilustrações vetoriais
-
-### Otimização de Imagens
-
-- Redimensione imagens antes de adicionar
-- Comprima para web (70-80% qualidade)
-- Use dimensões adequadas ao uso:
-  - Hero: 1920x1080px
-  - Cards de pets: 600x600px
-  - Fotos de equipe: 300x300px
-
-## 🔧 Validação W3C
-
-### Para validar o HTML
-
-1. Acesse: <https://validator.w3.org/>
-2. Escolha "Validate by File Upload"
-3. Faça upload dos arquivos HTML (um por vez):
-   - index.html
-   - projetos.html
-   - cadastro.html
-4. Corrija eventuais erros/avisos se houver
-
-### Para validar o CSS
-
-1. Acesse: <https://jigsaw.w3.org/css-validator/>
-2. Escolha "By file upload"
-3. Faça upload do arquivo `css/styles.css`
-4. Verifique os resultados
-
-## 🎨 Personalização
-
-### Alterar Cores
-
-Edite as variáveis CSS no início do arquivo `css/styles.css`:
-
-```css
-:root {
-    --primary-color: #FF6B35;      /* Cor principal (laranja) */
-    --secondary-color: #004E89;    /* Cor secundária (azul) */
-    --accent-color: #F77F00;       /* Cor de destaque */
-    --success-color: #06A77D;      /* Cor de sucesso (verde) */
-    --error-color: #E63946;        /* Cor de erro (vermelho) */
-}
-```
-
-### Alterar Fontes
-
-Para usar uma fonte diferente do Google Fonts:
-
-1. Acesse: <https://fonts.google.com/>
-2. Escolha uma fonte (ex: Poppins)
-3. Copie o link fornecido
-4. Adicione no `<head>` de todos os HTML:
-
-```html
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-```
-
-"**5.**"Atualize o CSS:
-
-```css
-body {
-    font-family: 'Poppins', sans-serif;
-}
-```
+✅ Mínimo 3 páginas HTML com estrutura semântica completa  
+✅ Hierarquia de títulos lógica e consistente  
+✅ Uso de imagens (preparado para adicionar)  
+✅ Formulário complexo na página cadastro.html  
+✅ Tipos de entrada HTML5 variados  
+✅ Validação nativa com atributos HTML5  
+✅ Agrupamento lógico com fieldsets  
+✅ Máscaras para CPF, Telefone e CEP  
+✅ Design responsivo mobile-first  
+✅ Compatibilidade tablets e desktops  
+✅ Pontos de quebra bem definidos  
+✅ Conformidade WCAG 2.1 Nível AA  
+✅ Navegação por teclado  
+✅ Suporte a leitores de tela  
+✅ Contraste adequado de cores
+<<<<<<< HEAD
+**
+**## 📱 Testes Recomendados
+=======
 
 ## 📱 Testes Recomendados
+>>>>>>> a3a9a929793e8105af90a909754300d9c0285ff7
 
 ### Navegadores
 
@@ -284,72 +179,13 @@ O projeto foi desenvolvido com foco em performance:
 - **CSS organizado**: Fácil de minificar
 - **JavaScript eficiente**: Código modular
 - **Imagens**: Preparado para lazy loading
+<<<<<<< HEAD
+****## 📚 Tecnologias Utilizadas
+=======
 
-## 🆘 Solução de Problemas Comuns
-
-### ❌ Problema: CSS não está carregando
-
-**Possíveis causas:**
-
-- Caminho do arquivo incorreto
-- Arquivo CSS não foi salvo
-- Arquivo CSS está na pasta errada
-
-**Solução:**
-
-```html
-<!-- Verifique se o caminho está assim no HTML: -->
-<link rel="stylesheet" href="css/styles.css">
-```
-
-### ❌ Problema: JavaScript não funciona
-
-**Possíveis causas:**
-
-- Script não está no final do body
-- Arquivo JS não foi salvo
-- Erros no console
-
-**Solução:**
-
-```html
-<!-- O script deve estar antes de </body>: -->
-<script src="js/scripts.js"></script>
-</body>
-```
-
-### ❌ Problema: Formulário não valida
-
-**Solução:**
-
-1. Abra o DevTools (F12)
-2. Vá na aba Console
-3. Verifique se há erros em vermelho
-4. Certifique-se que o arquivo scripts.js está carregando
-
-### ❌ Problema: Menu mobile não abre
-
-**Solução:**
-
-1. Verifique se o arquivo JavaScript está sendo carregado
-2. Abra o Console (F12) e veja se há erros
-3. Teste em outro navegador
-
-### ❌ Problema: Busca de CEP não funciona
-
-**Possíveis causas:**
-
-- Sem conexão com internet
-- API ViaCEP fora do ar (raro)
-- CEP inválido
-
-**Solução:**
-
-1. Verifique sua conexão com internet
-2. Teste com um CEP válido (ex: 01310-100)
-3. Veja o Console (F12) para mensagens de erro
 
 ## 📚 Tecnologias Utilizadas
+>>>>>>> a3a9a929793e8105af90a909754300d9c0285ff7
 
 - **HTML5**: Estrutura e semântica
 - **CSS3**: Estilização e responsividade
@@ -438,7 +274,3 @@ Além dos requisitos mínimos, o projeto inclui:
 🌐 <www.petmeal.org.br> (fictício)
 
 ---
-
-### Desenvolvido com ❤️ e 🐾 para salvar vidas animais
-
-Última atualização: Outubro de 2025
