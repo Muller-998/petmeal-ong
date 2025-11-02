@@ -8,11 +8,9 @@ PetMeal é uma plataforma web completa desenvolvida para ONGs que trabalham com 
 
 - Você pode visualizar o site em funcionamento através do GitHub Pages no link abaixo:
 
-<<<<<<< HEAD
    <https://muller-998.github.io/petmeal-ong/>
 =======
    https://muller-998.github.io/petmeal-ong/
->>>>>>> a3a9a929793e8105af90a909754300d9c0285ff7
 
 ## ✨ Funcionalidades Implementadas
 
